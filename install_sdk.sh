@@ -2,7 +2,8 @@
 mkdir $HOME/affdex-sdk
 tar -xzvf affdex-cpp-sdk-4.0-75-ubuntu-xenial-xerus-x86_64bit.tar.gz -C $HOME/affdex-sdk
 export AFFDEX_DATA_DIR=$HOME/affdex-sdk/data
-git clone https://github.com/Affectiva/cpp-sdk-samples.git $HOME/sdk-samples
+#git clone https://github.com/Affectiva/cpp-sdk-samples.git $HOME/sdk-samples
+git clone https://git.rubenvandeven.com/r/affdex-sdk-cpp-samples $HOME/sdk-samples
 mkdir $HOME/build
 cd $HOME/build
 cmake -DOpenCV_DIR=/usr/ -DBOOST_ROOT=/usr/ -DAFFDEX_DIR=$HOME/affdex-sdk $HOME/sdk-samples

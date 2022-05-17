@@ -3,6 +3,7 @@ COPY . /root/
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN apt-get -y install build-essential libopencv-dev libcurl4-openssl-dev uuid-dev git wget curl git
+RUN mkdir -p /mnt/share
 CMD bash
 #RUN bash /root/install_boost.sh
 #RUN bash /root/install_cmake.sh
